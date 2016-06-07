@@ -24,7 +24,7 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{blue}{HTML}{6CE0F1}
 
-\RequirePackage{titlesec}
+\RequirePackage{titlesec} % required for some features of \titleformat
 
 % Use to draw horizontal line with specific thickness:
 % - Set rule before
@@ -36,7 +36,7 @@
 \newcommand\ruleafter[1]{#1~\xrfill[0ex]{1pt}[darkgray]}
 
 
-\RequirePackage{titlesec} % required for some features of \titleformat
+
 
 % Custom \section
 \titleformat{\section}
