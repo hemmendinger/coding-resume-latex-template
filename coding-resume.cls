@@ -11,6 +11,12 @@
 % Header/Footer set to empty
 \pagestyle{empty}
 
+% Helvetica in text and math mode as default font
+\renewcommand{\familydefault}{\sfdefault}
+\RequirePackage[scaled=1]{helvet}
+\RequirePackage[helvet]{sfmath}
+\everymath={\sf}
+
 % Colors
 \RequirePackage{xcolor}
 \definecolor{darkgray}{HTML}{444444}
@@ -21,22 +27,22 @@
 \RequirePackage{titlesec}
 
 % Use to draw horizontal line with specific thickness:
-% - set rule before
+% - Set rule before
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
-% - center title and hrule on each side
+% - Center title and hrule on each side
 \newcommand*\ruleline[1]{\par\noindent\raisebox{.8ex}{\makebox[\linewidth]{\hrulefill\hspace{1ex}\raisebox{-.8ex}{#1}\hspace{1ex}\hrulefill}}}
-
-\RequirePackage{titlesec} 
+% - Horizontal rule after title at line base
 \RequirePackage{xhfill}
-
-% Horizontal rule after title at base
 \newcommand\ruleafter[1]{#1~\xrfill[0ex]{1pt}[darkgray]}
+
+
+\RequirePackage{titlesec} % required for some features of \titleformat
 
 % Custom \section
 \titleformat{\section}
   % Make the \section headers large (\Large),
   % small capitals (\scshape) and left aligned (\raggedright)
-  {\Large\raggedright\sffamily}
+  {\Large\raggedright\bfseries\sffamily}
   % Can be used to give a prefix to all sections, like 'Section ...'
   {}{0em}                      
   % Can be used to insert code before the heading
@@ -47,17 +53,12 @@
 
 
 \titleformat{\subsection}
-  {\large\raggedright}
+  {\large\raggedright\sffamily}
   {}{0em}
   {}
 
 
 
-% Use Helvetica in text and math mode 
-\renewcommand{\familydefault}{\sfdefault}
-\RequirePackage[scaled=1]{helvet}
-\RequirePackage[helvet]{sfmath}
-\everymath={\sf}
 
 
 
