@@ -11,6 +11,11 @@ Features:
 * Quick to setup and change
 
 Packages required (in progress):
-
-
+utf8
+geometry
+helvet
+sfmath
+xcolor
+titlesec
+xhfill
 
