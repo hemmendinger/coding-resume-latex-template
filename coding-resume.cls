@@ -4,16 +4,12 @@
 
 \RequirePackage[utf8]{inputenc}
 
-
 % Configure page margins with geometry
 \RequirePackage{geometry}
-%\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 \geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
 
 % Header/Footer set to empty
 \pagestyle{empty}
-
-
 
 % Colors
 \RequirePackage{xcolor}
@@ -24,17 +20,10 @@
 
 \RequirePackage{titlesec}
 
-
-% Color first three letters
-\def\sectioncolor#1#2#3{
-  \color{darkgray}{#1#2#3}
-}
-
-
-% Use to draw horizontal line with specific thickness
-% before
+% Use to draw horizontal line with specific thickness:
+% - set rule before
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
-% center title and hrule on each side
+% - center title and hrule on each side
 \newcommand*\ruleline[1]{\par\noindent\raisebox{.8ex}{\makebox[\linewidth]{\hrulefill\hspace{1ex}\raisebox{-.8ex}{#1}\hspace{1ex}\hrulefill}}}
 
 \RequirePackage{titlesec} 
