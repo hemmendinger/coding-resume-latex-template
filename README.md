@@ -1,3 +1,3 @@
 # Clean & Simple Resume Template
-A clean and simple resume template written in LaTeX.
+A clean and simple resume template in LaTeX.
 
