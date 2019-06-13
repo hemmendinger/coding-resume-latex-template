@@ -1,8 +1,6 @@
 # Clean & Simple Resume Template
 A clean and simple resume template in LaTeX.
 
-This is a work in progress for the next couple days.
-
 Use "coding-resume" as document class if writing a .tex from scratch.
 
 Features:
